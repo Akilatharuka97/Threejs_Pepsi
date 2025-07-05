@@ -1,0 +1,202 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+header .banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+header .banner .circle-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+header .banner .banner-text-wrapper {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+}
+header .banner .banner-text-wrapper .banner-text {
+  white-space: nowrap;
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 200px;
+  color: #ffffff;
+  display: inline-block;
+  will-change: transform;
+}
+header .banner #webgl {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  /* or your desired size */
+  height: 400px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.5s ease;
+}
+header .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  display: block;
+  position: relative;
+}
+
+.scroll-section {
+  position: relative;
+  height: 100vh;
+  background: #DB4437;
+  position: relative;
+}
+.scroll-section .circle-text {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  pointer-events: none;
+  left: 150px;
+  top: 150px;
+}
+.scroll-section .circle-text .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 50%;
+  display: inline-block;
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 28px;
+  /* slightly bigger, adjust as needed */
+  line-height: 1;
+  white-space: nowrap;
+  padding: 0 2px;
+  /* spacing between letters */
+  color: white;
+  user-select: none;
+  pointer-events: none;
+}
+.scroll-section .about-text {
+  width: 600px;
+  position: absolute;
+  right: 300px;
+  top: 150px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+.scroll-section .about-text.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-section .about-text h2 {
+  font-size: 100px;
+  margin: 0;
+  color: #fff;
+  font-family: "Darumadrop One", sans-serif;
+  text-transform: uppercase;
+}
+.scroll-section .about-text p {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  text-align: justify;
+}
+
+.scroll-section-blue {
+  position: relative;
+  height: 100vh;
+  background: #004C97;
+}
+.scroll-section-blue .banner-text-wrapper {
+  position: absolute;
+  top: -170px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+}
+.scroll-section-blue .banner-text-wrapper .banner-text {
+  white-space: nowrap;
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 200px;
+  color: #fff;
+  display: inline-block;
+  will-change: transform;
+}
+.scroll-section-blue .about-text {
+  width: 600px;
+  position: absolute;
+  left: 300px;
+  top: 150px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+  opacity: 0;
+  transform: none;
+}
+.scroll-section-blue .about-text.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-section-blue .about-text h2 {
+  font-size: 100px;
+  margin: 0;
+  color: #fff;
+  font-family: "Darumadrop One", sans-serif;
+  text-transform: uppercase;
+}
+.scroll-section-blue .about-text p {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  text-align: justify;
+}
+
+.shop {
+  position: relative;
+  height: 100vh;
+  background: #DB4437;
+  z-index: 999;
+  overflow: hidden;
+}
+.shop h1 {
+  max-width: 75%;
+  font-size: 150px;
+  text-align: center;
+  font-family: "Darumadrop One", sans-serif;
+  color: #540032;
+  margin: 0 auto;
+  background-image: url("assets/p-ban.jpg");
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.shop .wrapper .cards #webgl2 {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=style.css.map */
